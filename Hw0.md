@@ -5,7 +5,7 @@ git commit
 git commit
 ```
 
-# Level 1.2
+# Level 1.2 
 ```
 git branch bugFix
 git checkout bugFix
@@ -53,3 +53,69 @@ git reset HEAD~1
 git checkout pushed
 git revert HEAD
 ```
+# Level 3.1
+```
+git cherry-pick C3 C4 C7
+```
+
+# Level 3.2
+```
+ git rebase -i HEAD~4 --aboveAll
+```
+
+# Level 4.1
+```
+git checkout master
+git cherry-pick C4
+```
+
+# Level 4.2
+```
+git rebase -i HEAD~2
+git commit --amend
+git rebase -i master
+git branch -f master caption
+```
+# Level 4.3
+```
+git checkout C2
+git commit --amend
+git checkout master
+git cherry-pick C2' C3
+```
+
+# Level 4.4
+```
+git tag v0 C1
+git tag v1 C2
+git checkout v1
+```
+
+# Level 4.5
+```
+git describe master
+git describe side
+git commit
+```
+# Level 5.1
+```
+git rebase side another
+git rebase bugFix another
+git rebase master another
+git branch -f master another
+```
+# Level 5.2
+```
+git branch -f bugWork HEAD~^2~
+```
+# Level 5.3
+```
+git checkout one
+git cherry-pick C4 C3 C2
+git checkout two
+git cherry-pick C5 C4 C3 C2
+git branch -f three C2
+```
+# Screenshot of Git Levels
+
+![](https://cloud.githubusercontent.com/assets/11032855/9749636/d708fc98-565c-11e5-9b65-95f935040371.png)
