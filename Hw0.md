@@ -1,3 +1,4 @@
+# Git basics
 
 # Level 1.1   
 ```
@@ -5,7 +6,7 @@ git commit
 git commit
 ```
 
-# Level 1.2 
+# Level 1.2
 ```
 git branch bugFix
 git checkout bugFix
@@ -119,3 +120,14 @@ git branch -f three C2
 # Screenshot of Git Levels
 
 ![](https://cloud.githubusercontent.com/assets/11032855/9749636/d708fc98-565c-11e5-9b65-95f935040371.png)
+
+# Hooks
+
+![hw0](https://cloud.githubusercontent.com/assets/11032855/9750613/1ca9a300-5668-11e5-9fdd-1b29704ab81b.gif)
+
+# Content of post-commit
+```
+#!/bin/bash
+
+open https://github.com/gsrajadh/Devops-HW
+```
